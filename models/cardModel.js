@@ -13,5 +13,5 @@ const cardSchema=new mongoose.Schema({
         ref:"customer"
     }
 },{timestamps:true})
-const cardModelSchema = mongoose.model('card',cardSchema)
-module.exports={cardModelSchema}
+const cardModel = new mongoose.model('card',cardSchema)
+module.exports={cardModel}

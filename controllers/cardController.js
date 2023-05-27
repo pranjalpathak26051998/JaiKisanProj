@@ -1,4 +1,4 @@
-const cardModel=require('../models/cardModel')
+const {cardModel}=require('../models/cardModel')
 
 const createCard=async (req,res)=>{
     try{
@@ -10,4 +10,4 @@ catch(err){
     res.status(404).send({status:false,message:`the error is due to ${err}`})
 }
 }
-module.exports={createCard}   
+module.exports={createCard}     
