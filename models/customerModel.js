@@ -16,6 +16,6 @@ const customerSchema=new mongoose.Schema({
         format:/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/
     },
     status:{type:String, enum:["ACTIVE","INACTIVE"]}
-})
+},{timestamps:true})
 const customerModel=new mongoose.model("customer",customerSchema)
 module.exports={customerModel}

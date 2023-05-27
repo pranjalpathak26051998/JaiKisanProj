@@ -1,5 +1,6 @@
 const express=require('express')
 const customerControllers=require('../controllers/custController')
+const cardControllers=require('../controllers/cardController')
 const router=express.Router()
 
 router.post('/test-api', (req,res)=>{
@@ -7,5 +8,5 @@ router.post('/test-api', (req,res)=>{
 })
 
 router.post('/createNewCustomer',customerControllers.createNewCustomer)
-
+router.post('/createNewCard',cardControllers.createCard)
 module.exports=router
